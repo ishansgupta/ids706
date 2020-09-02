@@ -1,0 +1,52 @@
+version: "3.8"
+services:
+  redis:
+    image: redis:latest
+    container_name: ids-redis
+    deploy:
+      replicas: 1
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+        - "27017:27017"
+    volumes:
+      # Just specify a path and let the Engine create a volume
+      - /opt/redis
+      - ./redis-data:/home/redis
+  postgres:
+    image: postgres:latest
+    container_name: ids-postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+        - "27018:27018"
+    volumes:
+        - /opt/postgres
+        - ./postgres-data:/home/postgres
+  mysql:
+    image: mysql:latest
+    container_name: ids-mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+        - "27019:27019"
+    volumes:
+        - /opt/mysql
+        - ./mysql-data:/home/mysql
+  mongodb:
+    image: mongo:latest
+    container_name: ids-mongo
+    environment:
+      MONGODB_USER: "user"
+      MONGODB_DATABASE: "mongo"
+      MONGODB_PASS: "password"
+    ports:
+        - "27020:27020"
+    volumes:
+        - /opt/mongo
+        - ./mongo-data:/home/mongo
+
