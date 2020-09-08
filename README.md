@@ -3,7 +3,7 @@
 * Docker containers for some of the databases to be used in IDS-706
 
 ## Installation
-* [Install Docker]([https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/))
+* [Install and Run Docker](https://docs.docker.com/get-docker/)
 * Clone this repository
 * Go to repository via `cd`
 * Run `docker-compose up`
