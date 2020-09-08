@@ -12,7 +12,7 @@ This assignment tests the usage of nested queries, joins and some usage of SQL f
 ### Usage  
 
 * Since we have already used a bit of MySQL in class, we will be using PostgresSQL in this assignment. Both use SQL as the query language, but some advanced functions might vary for Postgres and MySQL
-* **Docker might have complications with different Operating Systems. You can find the setup instructions for Duke VM in duke_vcm_setup.md in this folder. You can skip the rest of this section and move to the questions.**
+* **Docker might have installing complications with different Operating Systems. You can find the setup instructions for Duke VM in duke_vcm_setup.md in this folder. If you intend on using the VM, you can skip the rest of this section and move to the questions.**
 * You can use the data file in any Postgres database. If you don't have Postgres setup, use the setup instructions in the repository README. We haven't tried these Docker containers before, so please reach out as soon as you run into issues. Rather than trying to debug on your own.
 * If you are using the containers. Place unzipped data file in the `postgres-data` folder
 * Ensure docker containers are running `docker-compose up`
