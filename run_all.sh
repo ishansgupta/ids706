@@ -17,10 +17,5 @@ apt-get install docker-ce-cli -y &&
 apt-get install containerd.io -y &&
 apt-get install docker-compose -y &&
 wget https://edu.postgrespro.com/demo-big-en.zip -P postgres-data/ &&
-cd postgres-data &&
-unzip demo-big-en.zip &&
-cd .. &&
+unzip postgres-data/demo-big-en.zip -d postgres-data
 docker-compose up -d
-    
-
-
