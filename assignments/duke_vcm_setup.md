@@ -1,7 +1,7 @@
 ### Setup
 For this assignment we will be using Docker. In general, you can run Postgres without Docker. Docker makes the process of creating containers very simple and adding new databases, or some other technology very easy.
 
-1. * Reserve a VM - Ubuntu 18.04 LTS (Bionic Beaver) operating system (Ignore the Ssh )
+1. * Reserve a VM - Ubuntu 18.04 LTS (Bionic Beaver) operating system (Use the less secure option)
 	* ssh into the VM
 	* Run `sudo -i`
 
