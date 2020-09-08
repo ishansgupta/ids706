@@ -30,3 +30,7 @@ This assignment tests the usage of nested queries, joins and some usage of SQL f
 5. Which 2 airports have the highest number of boarded passengers?
 6. Find potential two legged flights from the flights table for 21st November. We will only consider "scheduled" travel. Consider all scheduled arrivals and departures to happen on 21st. A potential two legged flight is defined as given three airports A,B and C, there are two flights - one from A to B, one from B to C and the departure of flight from B to C is 30 minutes later to arrival the flight from A to B. Output should have two flight numbers, departure, intermediate and arrival cities. Limit to 15 rows
 7. For the month of November, find the number of scheduled am flights and number of scheduled pm flights for each aircraft model, and the total number of flights, sorted in descending order by total number of flights. Your result should show the aircraft model, number of AM and PM flights. Hint : Use `CASE WHEN`
+
+### Submission
+
+Submit a .sql file as specified in `sample_submission.sql`
