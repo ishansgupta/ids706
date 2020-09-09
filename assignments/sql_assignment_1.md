@@ -10,17 +10,11 @@ This assignment tests the usage of nested queries, joins and some usage of SQL f
 * [Download Data](https://edu.postgrespro.com/demo-big-en.zip)
 
 ### Usage  
+Since we have already used a bit of MySQL in class, we will be using PostgresSQL in this assignment. Both use SQL as the query language, but some advanced functions might vary for Postgres and MySQL. 
 
-* Since we have already used a bit of MySQL in class, we will be using PostgresSQL in this assignment. Both use SQL as the query language, but some advanced functions might vary for Postgres and MySQL
-* **Docker might have installing complications with different Operating Systems. You can find the setup instructions for Duke VM in [duke_vcm_setup.md](https://github.com/ishansgupta/ids706/blob/master/assignments/duke_vcm_setup.md) in this folder. If you intend on using the Duke VM, you can skip the rest of this section and move to the questions.**
-* You can use the data file in any Postgres database. If you don't have Postgres setup, use the setup instructions in the repository README. We haven't tried these Docker containers before, so please reach out as soon as you run into issues. Rather than trying to debug on your own.
-* If you are using the containers. Place unzipped data file in the `postgres-data` folder
-* Ensure docker containers are running `docker-compose up`
-* Execute the container `docker exec -it ids-postgres /bin/bash`
-* Run `psql -U postgres -f /home/postgres/demo-big-en-20170815.sql postgres` inside the container
-* Now the data has been loaded. The database name is `demo`.  Run `psql -U postgres`
-* Then run `\c demo;` (Same as USE DATABASE in MySQL)
-* You should be able to run your queries now
+You can choose either of the two options. Generally Docker's compatability with Windows OS is a bit sketchy. So the VCM setup is recommended.
+* [Duke VCM setup](https://github.com/ishansgupta/ids706/blob/master/assignments/duke_vcm_setup.md)
+* [Generic Setup](https://github.com/ishansgupta/ids706/blob/master/assignments/generic_setup_instructions.md)
 
 ### Questions
 
